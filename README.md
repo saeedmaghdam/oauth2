@@ -14,12 +14,16 @@
 
 ### Authorization Implicit Flow
 
+> This flow is deprecated
+
 ![](./assets/authorization-implicit-flow.png)
 
 - This flow is desined for client's with type public (non-confidential) like JavaScript or native applications.
 - Client does not have access to `resource owner`'s credentials
 
 ### Resource Owner Password Credentials Flow (ROPC)
+
+> This flow is deprecated
 
 ![](./assets/resource-owner-password-credentials-flow.png)
 
