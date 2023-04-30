@@ -25,3 +25,10 @@
 
 - This flow is designed for trusted clients! for example, facebook app is a trusted client for facebook itself! 
 - Client **has access** to `resource owner`'s credentials
+
+### Client Credentials Flow
+
+![](./assets/client-credentials-flow.png)
+
+- In client credentials flow, the user does not have any role!
+- Client should be a confidential client, otherwise, it will have security issues
