@@ -9,9 +9,9 @@ user        -> client               : Requires data
 client      -> idp                  : Redirects resource owner to authorization server to input his/her credentials with client_id
 idp         -> idp                  : Resource owner inputs credentials
 idp         -> client               : Authorization server redirect resource owner to the client with a code, for ex. 4981003201
-client      -> idp                  : Sends a back-channel request with payload: Code + ClientId + ClientSecret
-idp         -> client               : Token
-client      -> api                  : Client uses token to access resouces on behalf of the resource owner
+client      -> idp                  : Sends a back-channel request with payload Code + ClientId + ClientSecret to get a access token
+idp         -> client               : Access Token
+client      -> api                  : Client uses access token to access resouces on behalf of the resource owner
 api         -> client               : Return data
 client      -> user                 : Return data
 

@@ -17,3 +17,9 @@
 ![](./assets/authorization-implicit-flow.png)
 
 - This flow is desined for client's with type public (non-confidential) like JavaScript or native applications.
+
+### Resource Owner Password Credentials Flow
+
+![](./assets/resource-owner-password-credentials-flow.png)
+
+- This flow is designed for trusted clients! for example, facebook app is a trusted client for facebook itself! 
