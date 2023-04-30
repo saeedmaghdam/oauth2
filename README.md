@@ -15,3 +15,5 @@
 ### Authorization Implicit Flow
 
 ![](./assets/authorization-implicit-flow.png)
+
+- This flow is desined for client's with type public (non-confidential) like JavaScript or native applications.
