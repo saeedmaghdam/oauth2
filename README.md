@@ -57,11 +57,14 @@
 | Identity Provider | A server that provides authentication and authorization services to the client. |
 | JSON Web Token (JWT) | A compact, URL-safe means of representing claims to be transferred between two parties. JWTs are used as access tokens in OAuth2 and OpenID Connect. |
 | OpenID Connect (OIDC) | A protocol built on top of OAuth2 that adds authentication capabilities. OIDC allows the client to verify the identity of the end user based on the authentication performed by the identity provider. |
+| Principal | An entity that represents a user or service account that is identified by an authentication system. |
 | Resource Owner | An entity that is capable of granting access to a protected resource. In OAuth2, the resource owner is typically the end user. |
 | Resource Server | A server that hosts protected resources and that is capable of accepting and responding to protected resource requests using access tokens. |
 | Relying Party | An entity that relies on an identity provider to authenticate users and provide claims about those users. In other words, a relying party is a client that trusts the identity provider to authenticate its users. |
 | Scope | A string that specifies the level of access that the client is requesting. Scopes are used by the authorization server to determine the extent of access that the client is granted. |
+| Subject | An entity that is authenticated by an identity provider. In the context of SSO, a subject is typically a user who has successfully authenticated with an identity provider and has been issued an access token. |
 | Token Endpoint | The endpoint on the authorization server that the client uses to exchange an authorization code for an access token. |
+| User | An entity that interacts with a system or application, typically through a user interface. In the context of authentication and authorization, a user is typically someone who is authenticated by an identity provider and is granted access to resources based on their identity and associated permissions. |
 | Userinfo Endpoint | The endpoint on the identity provider that the client uses to obtain information about the authenticated end user. |
 
 ## Notes
