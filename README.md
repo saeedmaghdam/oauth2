@@ -36,3 +36,8 @@
 
 - In client credentials flow, the user does not have any role!
 - Client should be a confidential client, otherwise, it will have security issues
+
+## Notes
+- Audience of the access token is not the client, but the server owner
+- Audience of the id token is the client
+- Relying party is the application who relies on IDP, it does not have any authentication/authorization but relies on IDP
