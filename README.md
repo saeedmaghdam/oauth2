@@ -59,6 +59,7 @@
 | OpenID Connect (OIDC) | A protocol built on top of OAuth2 that adds authentication capabilities. OIDC allows the client to verify the identity of the end user based on the authentication performed by the identity provider. |
 | Resource Owner | An entity that is capable of granting access to a protected resource. In OAuth2, the resource owner is typically the end user. |
 | Resource Server | A server that hosts protected resources and that is capable of accepting and responding to protected resource requests using access tokens. |
+| Relying Party | An entity that relies on an identity provider to authenticate users and provide claims about those users. In other words, a relying party is a client that trusts the identity provider to authenticate its users. |
 | Scope | A string that specifies the level of access that the client is requesting. Scopes are used by the authorization server to determine the extent of access that the client is granted. |
 | Token Endpoint | The endpoint on the authorization server that the client uses to exchange an authorization code for an access token. |
 | Userinfo Endpoint | The endpoint on the identity provider that the client uses to obtain information about the authenticated end user. |
