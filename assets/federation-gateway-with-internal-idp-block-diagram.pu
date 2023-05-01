@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+
+package "Public Internet" {
+  [User]
+}
+
+rectangle "Federation Gateway" {
+  [Reverse Proxy]
+}
+
+rectangle "Identity Provider (IDP)" {
+  [Authentication Service]
+  [Authorization Service]
+}
+
+rectangle "Service Provider (SP)" {
+  [Service 1]
+  [Service 2]
+}
+
+[User] --> [Reverse Proxy] : Access Request
+[Reverse Proxy] --> [Authentication Service] : Authentication Request
+[Authentication Service] --> [Authorization Service] : Authorization Request
+[Authorization Service] --> [Authentication Service] : Authorization Token
+[Authentication Service] --> [Reverse Proxy] : Authentication Response
+[Reverse Proxy] --> [User] : Access Granted
+[Reverse Proxy] --> [Service 1] : Access Request
+[Reverse Proxy] --> [Service 2] : Access Request
+
+@enduml

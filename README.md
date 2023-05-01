@@ -37,6 +37,14 @@
 - In client credentials flow, the user does not have any role!
 - Client should be a confidential client, otherwise, it will have security issues
 
+## Federation Gateway
+
+![](./assets/federation-gateway.png)
+
+![](./assets/federation-gateway-with-internal-idp-block-diagram.png)
+
+![](./assets/federation-gateway-with-internal-idp-sequence-diagram.png)
+
 ## Notes
 - Audience of the access token is not the client, but the server owner
 - Audience of the id token is the client

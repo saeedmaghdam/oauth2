@@ -1,0 +1,13 @@
+@startuml
+actor User
+User -> ReverseProxy: Access Request
+ReverseProxy -> AuthenticationService: Authentication Request
+AuthenticationService -> AuthorizationService: Authorization Request
+AuthorizationService -> AuthenticationService: Authorization Token
+AuthenticationService -> ReverseProxy: Authentication Response
+ReverseProxy -> User: Access Granted
+ReverseProxy -> ServiceProvider1: Access Request
+ServiceProvider1 -> ReverseProxy: Resource Response
+ReverseProxy -> ServiceProvider2: Access Request
+ServiceProvider2 -> ReverseProxy: Resource Response
+@enduml

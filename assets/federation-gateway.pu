@@ -1,0 +1,9 @@
+@startuml
+actor User
+User -> SP: Access Request
+SP -> IDP: Authentication Request
+IDP -> User: Login Screen
+User -> IDP: Authentication Credentials
+IDP -> SP: Authorization Token
+SP -> User: Access Granted
+@enduml
