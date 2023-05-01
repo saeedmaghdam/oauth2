@@ -2,7 +2,7 @@
 
 ## Authorization Flows
 
-### Authorization Code Flow
+### Authorization Code Flow (authorization_code)
 
 ![](assets/authorization-code-flow.png)
 
@@ -12,7 +12,7 @@
 - ClientId and ClientSecret are sent using authorization headers in base64 format.
 - For more info, see [Access Token Request / RFC 6479](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1.3)
 
-### Authorization Implicit Flow
+### Authorization Implicit Flow (implicit)
 
 > This flow is deprecated
 
@@ -21,7 +21,7 @@
 - This flow is desined for client's with type public (non-confidential) like JavaScript or native applications.
 - Client does not have access to `resource owner`'s credentials
 
-### Resource Owner Password Credentials Flow (ROPC)
+### Resource Owner Password Credentials Flow (ROPC) (password)
 
 > This flow is deprecated
 
@@ -30,7 +30,7 @@
 - This flow is designed for trusted clients! for example, facebook app is a trusted client for facebook itself! 
 - Client **has access** to `resource owner`'s credentials
 
-### Client Credentials Flow
+### Client Credentials Flow (client_credentials)
 
 ![](./assets/client-credentials-flow.png)
 
