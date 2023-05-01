@@ -45,6 +45,24 @@
 
 ![](./assets/federation-gateway-with-internal-idp-sequence-diagram.png)
 
+## OAuth2 and OpenID Protocols' Terminologies 
+
+| Terminology | Definition |
+| --- | --- |
+| Access Token | A token that is issued by the authorization server to the client after the resource owner has granted authorization. The token is used by the client to access protected resources on behalf of the resource owner. |
+| Authorization Code | A code that is issued by the authorization server to the client after the resource owner has granted authorization. The code is exchanged by the client for an access token. |
+| Authorization Server | A server that issues access tokens to the client after the resource owner has granted authorization. |
+| Client | An application that requests access to a protected resource on behalf of the resource owner. |
+| Grant Type | A type of OAuth2 authorization flow that defines the way in which the client can obtain an access token. Common grant types include Authorization Code, Implicit, Resource Owner Password Credentials, and Client Credentials. |
+| Identity Provider | A server that provides authentication and authorization services to the client. |
+| JSON Web Token (JWT) | A compact, URL-safe means of representing claims to be transferred between two parties. JWTs are used as access tokens in OAuth2 and OpenID Connect. |
+| OpenID Connect (OIDC) | A protocol built on top of OAuth2 that adds authentication capabilities. OIDC allows the client to verify the identity of the end user based on the authentication performed by the identity provider. |
+| Resource Owner | An entity that is capable of granting access to a protected resource. In OAuth2, the resource owner is typically the end user. |
+| Resource Server | A server that hosts protected resources and that is capable of accepting and responding to protected resource requests using access tokens. |
+| Scope | A string that specifies the level of access that the client is requesting. Scopes are used by the authorization server to determine the extent of access that the client is granted. |
+| Token Endpoint | The endpoint on the authorization server that the client uses to exchange an authorization code for an access token. |
+| Userinfo Endpoint | The endpoint on the identity provider that the client uses to obtain information about the authenticated end user. |
+
 ## Notes
 - Audience of the access token is not the client, but the server owner
 - Audience of the id token is the client
