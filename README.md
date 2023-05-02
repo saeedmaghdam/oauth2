@@ -69,6 +69,20 @@
 - Grant Type: implicit
 - Response Type: token id_token
 - Required Scopes: openid profile
+  
+### Authorization Hybrid Flow
+
+![](assets/oidc-hybrid-flow.png)
+
+- Hybrid is combination of code flow and implicit flow
+- In hybrid flow, user authenticates, then authorization server sends code and for example id_token in redirect response, the frontchannel could use id_token, but to get a access_token, it should send a backchannel request to the authorization server
+
+- Grant Type: hybrid
+- Response Types:
+  - **code id_token** (Recommended)
+  - code token
+  - code id_token token
+- Required Scopes: openid profile
 
 ## Federation Gateway
 
