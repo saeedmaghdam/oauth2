@@ -1,10 +1,13 @@
 # OAuth2
 
-## Authorization Flows
+## OAuth2 Authorization Flows
 
-### Authorization Code Flow (authorization_code)
+### Authorization Code Flow
 
 ![](assets/authorization-code-flow.png)
+
+- Grant Type: authorization_code
+- Response Type: code
 
 - Client does not have access to `resource owner`'s credentials
 - Authorization server needs the resource owner's credentials to trust her/him, that's why client redirects resource owner to authorization server to input the credentials.
@@ -12,30 +15,48 @@
 - ClientId and ClientSecret are sent using authorization headers in base64 format.
 - For more info, see [Access Token Request / RFC 6479](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1.3)
 
-### Authorization Implicit Flow (implicit)
+### Authorization Implicit Flow
 
 > This flow is deprecated
+
+- Grant Type: implicit
+- Response Type: token
 
 ![](./assets/authorization-implicit-flow.png)
 
 - This flow is desined for client's with type public (non-confidential) like JavaScript or native applications.
 - Client does not have access to `resource owner`'s credentials
 
-### Resource Owner Password Credentials Flow (ROPC) (password)
+### Resource Owner Password Credentials Flow (ROPC)
 
 > This flow is deprecated
+
+- Grant Type: password
+- Response Type: token
 
 ![](./assets/resource-owner-password-credentials-flow.png)
 
 - This flow is designed for trusted clients! for example, facebook app is a trusted client for facebook itself! 
 - Client **has access** to `resource owner`'s credentials
 
-### Client Credentials Flow (client_credentials)
+### Client Credentials Flow
+
+- Grant Type: client_credentials
+- Response Type: token
 
 ![](./assets/client-credentials-flow.png)
 
 - In client credentials flow, the user does not have any role!
 - Client should be a confidential client, otherwise, it will have security issues
+
+## OpenID Connect Authorization Code Flows
+
+![](assets/oidc-authorization-code-flow.png)
+
+- Grant Type: authorization_code
+- Response Type: code id_token
+
+### 
 
 ## Federation Gateway
 
