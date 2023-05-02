@@ -49,21 +49,25 @@
 - In client credentials flow, the user does not have any role!
 - Client should be a confidential client, otherwise, it will have security issues
 
-## OpenID Connect Authorization Code Flows
+## OpenID Connect Authorization Flows
+
+- In the context of OpenID Connect (OIDC), the `openid` scope is a required scope that must be included in the authentication request in order to use OIDC for user authentication.
+
+### Authorization Code Flows
 
 ![](assets/oidc-authorization-code-flow.png)
 
 - Grant Type: authorization_code
 - Response Type: code id_token
+- Required Scopes: openid
 
-## OpenID Connect Authorization Implicit Flow
+### Authorization Implicit Flow
 
 ![](assets/oidc-authorization-implicit-flow.png)
 
 - Grant Type: implicit
 - Response Type: token id_token
-
-### 
+- Required Scopes: openid
 
 ## Federation Gateway
 
