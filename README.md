@@ -56,6 +56,13 @@
 - Grant Type: authorization_code
 - Response Type: code id_token
 
+## OpenID Connect Authorization Implicit Flow
+
+![](assets/oidc-authorization-implicit-flow.png)
+
+- Grant Type: implicit
+- Response Type: token id_token
+
 ### 
 
 ## Federation Gateway
