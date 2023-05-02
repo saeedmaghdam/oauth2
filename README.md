@@ -51,6 +51,7 @@
 
 ## OpenID Connect Authorization Flows
 
+- OIDC flows are all extensions of OAuth2 flows
 - In the context of OpenID Connect (OIDC), the `openid` scope is a required scope that must be included in the authentication request in order to use OIDC for user authentication.
 - In the context of OpenID Connect (OIDC), the `profile` is optional scope, but it should to request additional profile information like name, family, etc.
 
