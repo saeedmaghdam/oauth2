@@ -6,7 +6,7 @@ entity      AuthorizationServer as idp
 entity      ResourceServer      as api
 
 user        -> client               : Requires data
-client      -> idp                  : Redirects resource owner to authorization server to input his/her credentials with client_id
+client      -> idp                  : Redirects resource owner to authorization server to authenticate credentials with client_id
 idp         -> user                 : Login screen
 user        -> idp                  : Authentication credentials
 idp         -> client               : Authorization server redirect resource owner to the client with a Access Token + Id Token
