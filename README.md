@@ -52,6 +52,7 @@
 ## OpenID Connect Authorization Flows
 
 - In the context of OpenID Connect (OIDC), the `openid` scope is a required scope that must be included in the authentication request in order to use OIDC for user authentication.
+- In the context of OpenID Connect (OIDC), the `profile` is optional scope, but it should to request additional profile information like name, family, etc.
 
 ### Authorization Code Flows
 
@@ -59,7 +60,7 @@
 
 - Grant Type: authorization_code
 - Response Type: code id_token
-- Required Scopes: openid
+- Required Scopes: openid profile
 
 ### Authorization Implicit Flow
 
@@ -67,7 +68,7 @@
 
 - Grant Type: implicit
 - Response Type: token id_token
-- Required Scopes: openid
+- Required Scopes: openid profile
 
 ## Federation Gateway
 
