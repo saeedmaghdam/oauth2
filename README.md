@@ -108,7 +108,7 @@
 | JSON Web Token (JWT) | A compact, URL-safe means of representing claims to be transferred between two parties. JWTs are used as access tokens in OAuth2 and OpenID Connect. |
 | OpenID Connect (OIDC) | A protocol built on top of OAuth2 that adds authentication capabilities. OIDC allows the client to verify the identity of the end user based on the authentication performed by the identity provider. |
 | Resource Owner | An entity that is capable of granting access to a protected resource. In OAuth2, the resource owner is typically the end user. |
-| Resource Server | A server that hosts protected resources and that is capable of accepting and responding to protected resource requests using access tokens. |
+| Resource Server (Resource Provider) | A server that hosts protected resources and that is capable of accepting and responding to protected resource requests using access tokens. |
 | Scope | A string that specifies the level of access that the client is requesting. Scopes are used by the authorization server to determine the extent of access that the client is granted. |
 | Security Token Service (STS) | An STS is a web service that issues security tokens, which are used to authenticate and authorize access to protected resources. STSs are commonly used in federated identity scenarios, where users need to access resources across multiple security domains or organizations. |
 | Token Endpoint | The endpoint on the authorization server that the client uses to exchange an authorization code for an access token. |
