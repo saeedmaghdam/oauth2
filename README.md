@@ -114,6 +114,7 @@
 | Token Endpoint | The endpoint on the authorization server that the client uses to exchange an authorization code for an access token. |
 | User | An entity that interacts with a system or application, typically through a user interface. In the context of authentication and authorization, a user is typically someone who is authenticated by an identity provider and is granted access to resources based on their identity and associated permissions. |
 | Userinfo Endpoint | The endpoint on the identity provider that the client uses to retrieve information about the authenticated user. |
+| Party | Refer to an entity that participates in the authentication or authorization process. A party can be any entity that is involved in the process, including: Users, Clients, Identity Providers, Resource Providers |
 
 
 ## Notes
